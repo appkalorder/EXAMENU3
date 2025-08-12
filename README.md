@@ -1,50 +1,54 @@
-# 🛠️ PWA Boilerplate con MDL
+# ESPE PWA: Portal Informativo
 
-Este proyecto es un entorno base para desarrollar Progressive Web Apps (PWA) utilizando **Material Design Lite (MDL)**. Incluye configuración de herramientas modernas para desarrollo profesional, incluyendo:
+Este proyecto es una Progressive Web App (PWA) informativa sobre la Universidad de las Fuerzas Armadas - ESPE. Incluye navegación offline, instalación en dispositivos y diseño con Material Design Lite.
 
-- 📡 Servidor de desarrollo con recarga en vivo
-- ✅ Herramientas de calidad de código (ESLint y Prettier)
-- ⚙️ Scripts para desarrollo y producción
-- 📱 Estructura base con Service Worker y manifest.json
+## 🚀 Acceso a la aplicación
+
+**URL en GitHub Pages:**  
+https://appkalorder.github.io/EXAMENU3/
+
+---
 
 ## 📂 Estructura del Proyecto
 
-```bash
+```
 ├── index.html
-├── manifest.json
+├── about.html
+├── offer.html
+├── admision.html
+├── contact.html
+├── manifest.webmanifest.json
 ├── sw.js
 ├── css/
 ├── js/
 ├── assets/
-├── .eslintrc.json
-├── .prettierrc
-├── package.json
+├── components/
 ```
 
+---
 
-## 🚀 Scripts NPM
+## 🛠️ Funcionalidades principales
 
-- `npm run dev` → Inicia live-server con recarga en vivo.
-- `npm run lint` → Analiza el código con ESLint.
-- `npm run format` → Formatea el código automáticamente.
-- `npm run serve` → Sirve la app con http-server (producción). **Incluye `-c-1` para desactivar caché**, esencial para probar correctamente el Service Worker.
+- Instalación como app en dispositivos móviles y escritorio.
+- Funciona offline gracias al Service Worker.
+- Navegación entre secciones: Inicio, Sobre la ESPE, Oferta Académica, Proceso de Admisión y Contacto.
+- Diseño responsivo con Material Design Lite.
+- Integración de Web Components de terceros.
 
-## 💡 ¿Por qué usamos `-c-1` en producción?
+---
 
-El cache de `http-server` puede interferir con el cache que maneja tu Service Worker, generando falsos positivos o pruebas incorrectas. Este flag asegura que las pruebas sean reales y controladas por el Service Worker.
+## ⚠️ Notas para GitHub Pages
 
-## 🧱 Requisitos
+- Todas las rutas son relativas para asegurar compatibilidad en GitHub Pages.
+- El Service Worker y el manifiesto están en la raíz del repositorio.
+- El botón de instalación solo aparecerá si el navegador lo permite y la app no está instalada.
 
-- Node.js y NPM instalados.
-- Editor de texto como VSCode.
+---
 
-## ✅ ¿Para qué sirve este boilerplate?
+## 📱 Instalación
 
-Para comenzar cualquier PWA de forma profesional, sin tener que configurar todo manualmente. Solo clona y ejecuta:
-```bash
-git clone https://github.com/appkalorder/pwa_boilerplate
-cd pwa-boilerplate
-npm install
-npm run dev
-```
+1. Abre la URL de la app en tu navegador.
+2. Si tu navegador lo permite, verás un botón para instalar la app.
+3. También puedes instalarla desde el menú del navegador (opción "Instalar app" o similar).
 
+---
