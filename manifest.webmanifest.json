@@ -1,7 +1,8 @@
 {
-  "name": "PWA Boilerplate",
-  "short_name": "BoilerPWA",
-  "start_url": "./index.html",
+  "name": "EXAMENU3",
+  "short_name": "EXAMENU3",
+  "start_url": "/EXAMENU3/",
+  "scope": "/EXAMENU3/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#3f51b5",
