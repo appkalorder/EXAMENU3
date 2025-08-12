@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ESPE PWA: Portal Informativo</title>
+  <link rel="manifest" href="./manifest.webmanifest.json" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-amber.min.css" />
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script defer src="js/main.js"></script>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title">ESPE PWA: Portal Informativo</span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation. We hide it in small screens. -->
+                <nav class="mdl-navigation mdl-layout--large-screen-only">
+                    <a class="mdl-navigation__link" href="/">Inicio</a>
+                    <a class="mdl-navigation__link" href="./about.html">Sobre la ESPE</a>
+                    <a class="mdl-navigation__link" href="./offer.html">Oferta Académica</a>
+                    <a class="mdl-navigation__link" href="./admision.html">Proceso de Admisión</a>
+                    <a class="mdl-navigation__link" href="./contact.html">Contacto</a>
+                </nav>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Portal Informativo</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="/">Inicio</a>
+                <a class="mdl-navigation__link" href="./about.html">Sobre la ESPE</a>
+                <a class="mdl-navigation__link" href="./offer.html">Oferta Académica</a>
+                <a class="mdl-navigation__link" href="./admision.html">Proceso de Admisión</a>
+                <a class="mdl-navigation__link" href="./contact.html">Contacto</a>
+                <div class="mdl-navigation__link app--install" id="banner-install">
+                    <i class="material-icons mdl-color-text--primary">app_settings_alt</i>
+                    Instalar App
+                </div>    
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <div id="main">
+                    <div class="card-wide mdl-card page-index">
+                        <div class="svg--container">
+                          <div></div>
+                        </div>
+                        <div class="page--initial">
+                            <div class="description">
+                                <h2>ESPE - UNIVERSIDAD DE LAS FUERZAS ARMADAS</h2>
+                                <p>Bienvenidos a la PWA de la espe, la filosofia institucional dicta: La institución se debe fundamentalmente a la sociedad y Fuerzas Armadas, a ellas orienta su esfuerzo, contribuyendo a la solución de sus necesidades de desarrollo, mediante la formación profesional, técnica y científica, la investigación, planteamiento e implementación de soluciones en el ámbito de sus dominios académicos. Con la búsqueda permanente de la excelencia como institución centenaria y referente en la sociedad, mediante la práctica de los principios: respeto por la dignidad humana, identidad ESPE, excelencia académica; y los valores: disciplina, integridad, liderazgo, creatividad, cohesión y efectividad, en todas sus actividades académicas y administrativas, aplicando métodos y herramientas efectivas para la integración de la docencia, investigación y vinculación con la sociedad.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </main>
+    </div>
+     
+</body>
+</html>
